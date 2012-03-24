@@ -1,0 +1,46 @@
+@-webkit-keyframes rotate-headline {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes move-letters {
+  0% {
+    letter-spacing: 0px; }
+
+  50% {
+    letter-spacing: -100px; }
+
+  100% {
+    letter-spacing: 0px; } }
+
+@-webkit-keyframes rotate-letter {
+  0% {
+    letter-spacing: 0px; }
+
+  10% {
+    letter-spacing: 20px;
+    -webkit-transform: rotate(0deg); }
+
+  /* 50% { */
+  /*     -webkit-transform: rotate(180deg); */
+  /* } */
+  90% {
+    letter-spacing: 20px;
+    -webkit-transform: rotate(60deg); }
+
+  100% {
+    letter-spacing: 0px;
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes highlight-letter {
+  to {
+    color: #598eff; } }
+
+@-webkit-keyframes highlight-letter-blink {
+  from {
+    color: #598eff; }
+
+  to {
+    color: #507fe5; } }

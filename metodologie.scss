@@ -1,26 +1,69 @@
-@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One|Glass+Antiqua|Oldenburg|Ruslan+Display|Open+Sans+Condensed:700|Shojumaru|Forum|Nosifer|Eater);
-
-
-$color1: #598EFF;
-
-@-webkit-keyframes rotate-headline {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-
-    to {
-        -webkit-transform: rotate(360deg);
-    }
-}
+@import "colors";
+@import "anims";
 
 
 body {
     font-size: 40pt;
     font-family: 'Open Sans Condensed', sans-serif;
+    color: $blackish;
 }
 
 h1, h2, h3 {
+    color: $blackish;
     font-family: 'Alfa Slab One', cursive;
+    font-family: 'Krona One', cursive;
+}
+
+h1 {
+
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    color: $color1;
+    margin-left: 90px;
+}
+
+.list-el {
+    color: $blackish;
+}
+
+.scary {
+    color: #064316;
+    font-family: 'Eater', cursive;
+    font-size: 120%;
+}
+
+.ninja {
+    color: black;
+    font-family: 'Shojumaru', cursive;
+    font-size: 110%;
+}
+
+.bloody {
+    color: #BF0909;
+    font-family: 'Nosifer', cursive;
+}
+
+.step {
+    width: 1024px;
+}
+
+.category h1 {
+    font-family: 'Krona One', cursive;
+    font-size: 150pt;
+    text-align: center;
+}
+
+.category.active {
+    /* -webkit-animation: move-letters 0.5s 1s linear 1 both; */
+}
+
+.category.active .highlight-letters {
+    -webkit-animation: highlight-letter 0.3s 2s linear 1, highlight-letter-blink 0.2s 2.2s infinite;
 }
 
 .canvas-center {
@@ -29,39 +72,35 @@ h1, h2, h3 {
     left: -50px;
     width: 100px;
     height: 100px;
-    background: red;
+    background: rgba(255,0,0,0.7);
+    border-radius: 40px;
 }
 
 .rotate-headline {
+    font-family: 'Alfa Slab One', cursive;
     font-size: 300pt;
     position: absolute;
-    top: -1000px;
-    left: -1000px;
+    top: -1400px;
+    left: -1730px;
     text-align: center;
     line-height: 150%;
     -webkit-animation: rotate-headline 480s linear infinite;
-
     padding: 300px;
     border: 100px solid $color1;
     border-radius: 800px;
 }
 
-.step {
-    background: grey;
-}
-
-.slide {
-
-}
+$sepw: 8100px;
 
 .separator {
-    /* background: black; */
+    content: '.';
+    background: black;
     position: absolute;
-    top: 0px;
+    bottom: 0px;
+    -webkit-transform: translate(-$sepw/2) rotate(36deg);
     border: {
-        right: 10000px solid black;
+        left: $sepw/2 solid white;
+        right: $sepw/2 solid black;
     };
-    /* border: 2px solid black; */
-    width: 3300px;
     height: 10px;
 }
