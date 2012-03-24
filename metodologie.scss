@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One|Glass+Antiqua|Oldenburg|Ruslan+Display|Open+Sans+Condensed:700|Shojumaru|Forum|Nosifer|Eater);
+
+
+$color1: #598EFF;
+
+@-webkit-keyframes rotate-headline {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+body {
+    font-size: 40pt;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.canvas-center {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.rotate-headline {
+    font-size: 300pt;
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    text-align: center;
+    line-height: 150%;
+    -webkit-animation: rotate-headline 480s linear infinite;
+
+    padding: 300px;
+    border: 100px solid $color1;
+    border-radius: 800px;
+}
+
+.step {
+    background: grey;
+}
+
+.slide {
+
+}
+
+.separator {
+    /* background: black; */
+    position: absolute;
+    top: 0px;
+    border: {
+        right: 10000px solid black;
+    };
+    /* border: 2px solid black; */
+    width: 3300px;
+    height: 10px;
+}
