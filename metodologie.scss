@@ -54,8 +54,7 @@ li {
 }
 
 .shadow {
-    color: $color1;
-    -webkit-animation: shadow-blink 0.2s linear infinite;
+    -webkit-animation: highlight-letter 0.3s 1.5s linear 1 both, shadow-blink 0.2s linear infinite;
 }
 
 .underline {
@@ -79,7 +78,7 @@ li {
 }
 
 .category.active .highlight-letters {
-    -webkit-animation: highlight-letter 0.3s 2s linear 1, highlight-letter-blink 0.2s 2.2s infinite;
+    -webkit-animation: highlight-letter 0f.3s 2s linear 1, highlight-letter-blink 0.2s 2.2s infinite;
 }
 
 .canvas-center {
