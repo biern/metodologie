@@ -64,3 +64,19 @@
         color: $color1 * 0.9;
     }
 }
+
+$shadow-blink-color: #ABABAB;
+
+@-webkit-keyframes shadow-blink {
+    0% {
+        text-shadow: 1px 1px 2px $shadow-blink-color;
+    }
+
+    50% {
+        text-shadow: 1px 1px 5px $shadow-blink-color;
+    }
+
+    100% {
+        text-shadow: 1px 1px 2px $shadow-blink-color;
+    }
+}
