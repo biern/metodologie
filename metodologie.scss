@@ -54,8 +54,10 @@ li {
 
 .category h1 {
     font-family: 'Krona One', cursive;
-    font-size: 150pt;
+    font-size: 120pt;
     text-align: center;
+    background: rgba(220,220,220,1);
+    border-radius: 80px;
 }
 
 .category.active {

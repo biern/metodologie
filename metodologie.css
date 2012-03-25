@@ -84,8 +84,10 @@ li {
 
 .category h1 {
   font-family: 'Krona One', cursive;
-  font-size: 150pt;
-  text-align: center; }
+  font-size: 120pt;
+  text-align: center;
+  background: #dcdcdc;
+  border-radius: 80px; }
 
 .category.active {
   /* -webkit-animation: move-letters 0.5s 1s linear 1 both; */ }
