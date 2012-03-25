@@ -65,7 +65,7 @@ li {
     width: 900px;
 }
 
-.category h1 {
+h1 {
     font-family: 'Krona One', cursive;
     font-size: 110pt;
     text-align: center;
@@ -73,12 +73,18 @@ li {
     border-radius: 80px;
 }
 
-.category.active {
-    /* -webkit-animation: move-letters 0.5s 1s linear 1 both; */
+.active .highlight-letters {
+    -webkit-animation: highlight-letter 0.3s 2s linear 1, highlight-letter-blink 0.2s 2.2s infinite;
 }
 
-.category.active .highlight-letters {
-    -webkit-animation: highlight-letter 0f.3s 2s linear 1, highlight-letter-blink 0.2s 2.2s infinite;
+.tech {
+    display: inline-block;
+    font-family: 'Krona One', cursive;
+    background: $color3;
+    border-radius: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .canvas-center {
