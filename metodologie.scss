@@ -18,7 +18,12 @@ h1 {
 
 }
 
+h2 {
+    text-shadow: 1px 0px 1px $color1;
+}
+
 ul {
+    margin: 0px;
     list-style-type: square;
 }
 
@@ -48,15 +53,24 @@ li {
     font-family: 'Nosifer', cursive;
 }
 
+.shadow {
+    color: $color1;
+    -webkit-animation: shadow-blink 0.2s linear infinite;
+}
+
+.underline {
+    border-bottom: 8px solid $color3;
+}
+
 .step {
-    width: 1024px;
+    width: 900px;
 }
 
 .category h1 {
     font-family: 'Krona One', cursive;
-    font-size: 120pt;
+    font-size: 110pt;
     text-align: center;
-    background: rgba(220,220,220,1);
+    background: $color3;
     border-radius: 80px;
 }
 

@@ -44,3 +44,13 @@
 
   to {
     color: #507fe5; } }
+
+@-webkit-keyframes shadow-blink {
+  0% {
+    text-shadow: 1px 1px 2px #ababab; }
+
+  50% {
+    text-shadow: 1px 1px 5px #ababab; }
+
+  100% {
+    text-shadow: 1px 1px 2px #ababab; } }
