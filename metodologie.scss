@@ -18,7 +18,12 @@ h1 {
 
 }
 
+h2 {
+    text-shadow: 1px 0px 40px $color3;
+}
+
 ul {
+    margin: 0px;
     list-style-type: square;
 }
 
@@ -48,14 +53,24 @@ li {
     font-family: 'Nosifer', cursive;
 }
 
+.shadow {
+    -webkit-animation: highlight-letter 0.3s 1.5s linear 1 both, shadow-blink 0.2s linear infinite;
+}
+
+.underline {
+    border-bottom: 8px solid $color3;
+}
+
 .step {
-    width: 1024px;
+    width: 900px;
 }
 
 .category h1 {
     font-family: 'Krona One', cursive;
-    font-size: 150pt;
+    font-size: 110pt;
     text-align: center;
+    background: $color3;
+    border-radius: 80px;
 }
 
 .category.active {
@@ -63,7 +78,7 @@ li {
 }
 
 .category.active .highlight-letters {
-    -webkit-animation: highlight-letter 0.3s 2s linear 1, highlight-letter-blink 0.2s 2.2s infinite;
+    -webkit-animation: highlight-letter 0f.3s 2s linear 1, highlight-letter-blink 0.2s 2.2s infinite;
 }
 
 .canvas-center {
