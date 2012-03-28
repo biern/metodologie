@@ -65,8 +65,18 @@ h1, h2, h3 {
   font-family: 'Alfa Slab One', cursive;
   font-family: 'Krona One', cursive; }
 
+h1 {
+  font-family: 'Krona One', cursive;
+  font-size: 110pt;
+  text-align: center;
+  background: #dcdcdc;
+  border-radius: 80px; }
+
 h2 {
-  text-shadow: 1px 0px 40px #dcdcdc; }
+  font-size: 50pt;
+  text-align: center;
+  text-shadow: 1px 0px 40px #dcdcdc;
+ }
 
 ul {
   margin: 0px;
@@ -102,12 +112,6 @@ li {
 .step {
   width: 900px; }
 
-h1 {
-  font-family: 'Krona One', cursive;
-  font-size: 110pt;
-  text-align: center;
-  background: #dcdcdc;
-  border-radius: 80px; }
 
 .active .highlight-letters {
   -webkit-animation: highlight-letter 0.3s 2s linear 1, highlight-letter-blink 0.2s 2.2s infinite; }
@@ -152,3 +156,8 @@ h1 {
   border-left: 4050px solid white;
   border-right: 4050px solid black;
   height: 10px; }
+
+.center_image {
+  display: block;
+  margin: 0px auto 0px auto;
+}
